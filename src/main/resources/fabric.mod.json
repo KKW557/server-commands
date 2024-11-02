@@ -1,34 +1,23 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "server-commands",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Server Commands",
+	"description": "",
 	"authors": [
-		"Me!"
+		"557"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"repo": "https://github.com/KKW557/server-commands"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
-	"environment": "*",
+	"license": "GPL-3.0",
+	"icon": "assets/server-commands/icon.png",
+	"environment": "server",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.ExampleModClient"
+			"icu.suc.kevin557.servercommands.ServerCommands"
 		]
 	},
-	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.16.7",
 		"minecraft": "~1.21.3",

@@ -22,9 +22,8 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"modid" {
+		"server-commands" {
 			sourceSet sourceSets.main
-			sourceSet sourceSets.client
 		}
 	}
 
