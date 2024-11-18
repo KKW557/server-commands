@@ -12,7 +12,7 @@
 	},
 	"license": "GPL-3.0",
 	"icon": "assets/server-commands/icon.png",
-	"environment": "server",
+	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"icu.suc.kevin557.servercommands.ServerCommands"
