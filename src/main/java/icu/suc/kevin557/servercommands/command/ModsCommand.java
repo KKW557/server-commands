@@ -18,7 +18,7 @@ public class ModsCommand {
     private static int execute(@NotNull CommandContext<ServerCommandSource> context) {
         var mods = FabricLoader.getInstance().getAllMods();
         var size = mods.size();
-        context.getSource().sendFeedback(() -> Text.literal(String.format("Mods(%d): %s", size, String.join(", ", mods.stream().map(mod -> mod.getMetadata().getId()).toList()))), false);
+        context.getSource().sendFeedback(() -> Text.literal(String.format("Mods(%d): %s", size, String.join(", ", mods.stream().filter(mod -> mod.getContainingMod().isEmpty()).map(mod -> mod.getMetadata().getId()).toList()))), false);
         return size;
     }
 }
